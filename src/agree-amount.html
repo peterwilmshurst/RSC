@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate to the Royal Society of Chemistry</title>
+    <!--=include ./partials/head.html -->
+</head>
+
+<body>
+    <!--=include ./partials/navbar.html -->
+    <section class="section">
+
+        <div class="container">
+
+            <div class="column is-4-widescreen is-offset-4-widescreen is-6-desktop is-offset-3-desktop is-8-tablet is-offset-2-tablet">
+                <div class="box has-text-centered">
+                    <h3 class="is-size-4">Donation Amount</h3>
+                    <p class="my-4">You are making a single payment of</p>
+
+                    <input id="confirmDonation" type="currency" class="input my-4 is-medium has-text-centered" type="text" placeholder="Confirm Donation Amount" aria-readonly="true" readonly>
+
+                    <div class="columns is-vcentered mt-4">
+                        <div class="column"><button role="button" type="button" class="button is-primary is-fullwidth is-medium">Go to payment</button></div>
+                        <div class="column is-narrow"><a href="/" class="button is-info" title="Amend your donation amount">Change amount</a></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+    </section>
+
+    <section class="section pt-0 has-text-centered">
+        <div class="container px-6">
+            <p class="has-text-weight-bold is-size-5">A good inspirational chemistry education should be available to all</p>
+            <p class="my-4 is-size-5"><a href="https://www.rsc.org/support-us/" title="Ways to support the Royal Society of Chemistry" target="_blank">Find out how your donation will help</a></p>
+        </div>
+    </section>
+</body>
+
+<script>
+document.getElementById("confirmDonation").value = localStorage.getItem('myDonation');
+</script>
+<!--=include ./partials/end.html -->
+
+</html>

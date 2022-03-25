@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate to the Royal Society of Chemistry</title>
+    <!--=include ./partials/head.html -->
+</head>
+
+<body>
+    <!--=include ./partials/navbar.html -->
+    <section class="section">
+        <div class="card--donation">
+            <div class="container">
+
+                <div class="column is-6-desktop is-8-tablet">
+                    <div class="box has-text-centered">
+                        <h3 class="is-size-4">How much would you like to give?</h3>
+                        <p class="my-4">Make a single donation using your debit or credit card</p>
+
+                        <div class="columns mt-4">
+                            <div class="column"><button role="button" type="button" data-amount="£25" class="button is-fullwidth is-medium is-outlined" onclick="donationAmount(this);">&pound;25</button></div>
+                            <div class="column"><button role="button" type="button" data-amount="£50" class="button is-fullwidth is-medium is-outlined" onclick="donationAmount(this);">&pound;50</button></div>
+                            <div class="column"><button role="button" type="button" data-amount="£100" class="button is-fullwidth is-medium is-outlined" onclick="donationAmount(this);">&pound;100</button></div>
+                        </div>
+
+                        <input id="customValue" class="input my-4 is-medium" type="number" placeholder="Other Amount">
+
+                        <button id="donateNow" class="button is-primary is-medium is-fullwidth my-4 has-text-weight-bold">Donate now</button>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="section pt-0 has-text-centered">
+        <div class="container px-6">
+            <p class="has-text-weight-bold is-size-5">A good inspirational chemistry education should be available to all</p>
+            <p class="my-4 is-size-5"><a href="https://www.rsc.org/support-us/" title="Ways to support the Royal Society of Chemistry" target="_blank">Find out how your donation will help</a></p>
+        </div>
+    </section>
+</body>
+
+<script>
+function donationAmount(d) {
+    const myDonation = (d.getAttribute("data-amount"));
+    localStorage.setItem('myDonation', myDonation);
+}
+
+const customValue = document.getElementById("customValue");
+const donateNow = document.getElementById("donateNow");
+
+donateNow.onclick = function() {
+    if (customValue && customValue.value) {
+        const customDonation = customValue.value;
+        console.log(customDonation);
+        localStorage.setItem('myDonation', customDonation);
+    }
+    window.location.href = '/agree-amount.html';
+};
+</script>
+<!--=include ./partials/end.html -->
+
+</html>

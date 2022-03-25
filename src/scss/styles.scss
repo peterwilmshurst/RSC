@@ -1,0 +1,60 @@
+/*
+#   _     _  ___   ___                          
+#  | | _ | ||   | |   |                         
+#  | || || ||   | |   |                         
+#  |       ||   | |   |                         
+#  |       ||   | |   |___                      
+#  |   _   ||   | |       |                     
+#  |__| |__||___| |_______|                     
+#   __   __  _______  __   __                   
+#  |  |_|  ||       ||  | |  |                  
+#  |       ||  _____||  |_|  |                  
+#  |       || |_____ |       |                  
+#  |       ||_____  ||       |                  
+#  | ||_|| | _____| ||   _   |                  
+#  |_|   |_||_______||__| |__|                  
+#   __   __  ______    _______  _______         
+#  |  | |  ||    _ |  |       ||       |        
+#  |  | |  ||   | ||  |  _____||_     _|        
+#  |  |_|  ||   |_||_ | |_____   |   |          
+#  |       ||    __  ||_____  |  |   |          
+#  |       ||   |  | | _____| |  |   |   _____  
+#  |_______||___|  |_||_______|  |___|  |_____| 
+#
+# INIT v3.2
+*/
+
+@import 'variables';
+
+// Import only what is needed from Bulma
+@import "../../node_modules/bulma/sass/utilities/_all.sass";
+@import "../../node_modules/bulma/sass/base/_all.sass";
+@import "../../node_modules/bulma/sass/grid/columns.sass";
+
+@import "../../node_modules/bulma/sass/helpers/typography.sass";
+@import "../../node_modules/bulma/sass/helpers/spacing.sass";
+@import "../../node_modules/bulma/sass/helpers/visibility.sass";
+@import "../../node_modules/bulma/sass/helpers/color.sass";
+
+@import "../../node_modules/bulma/sass/elements/button.sass";
+@import "../../node_modules/bulma/sass/elements/container.sass";
+@import "../../node_modules/bulma/sass/elements/title.sass";
+@import "../../node_modules/bulma/sass/elements/content.sass";
+@import "../../node_modules/bulma/sass/elements/icon.sass";
+@import "../../node_modules/bulma/sass/elements/tag.sass";
+@import "../../node_modules/bulma/sass/elements/box.sass";
+
+@import "../../node_modules/bulma/sass/form/_all.sass";
+
+@import "../../node_modules/bulma/sass/components/navbar.sass";
+@import "../../node_modules/bulma/sass/components/pagination.sass";
+@import "../../node_modules/bulma/sass/components/tabs.sass";
+@import "../../node_modules/bulma/sass/components/card.sass";
+
+@import "../../node_modules/bulma/sass/layout/hero.sass";
+@import "../../node_modules/bulma/sass/layout/footer.sass";
+@import "../../node_modules/bulma/sass/layout/section.sass";
+
+@import 'global';
+@import 'card_donation';
+@import 'navbar';

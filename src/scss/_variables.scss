@@ -1,0 +1,75 @@
+// Variables 
+// Colour Palette
+
+/* Decorative colours */
+$fuchsia-500: #DA1884;
+$plum-500: #991E66;
+$tangerine-500: #FF9E1B;
+$orange-500: #FC4C02;
+$scarlet-500: #C8102E;
+$jade-500: #006F62;
+$forest-500: #115E67;
+$turquoise-500: #71DBD4;
+
+/* Dark Blue */
+$dark-blue-300: #007AAF;
+$dark-blue-400: #006396;
+$dark-blue-500: #004976;
+$dark-blue-600: #002F56;
+$dark-blue-700: #001E3F;
+
+/* Sky Blue */
+$sky-blue-300: #78D9EA;
+$sky-blue-400: #62C6DC;
+$sky-blue-500: #48A9C5;
+$sky-blue-600: #2E8CAE;
+$sky-blue-700: #147098;
+
+/* Yellow */
+$yellow-300: #FAF400;
+$yellow-400: #F6EB00;
+$yellow-500: #EEDC00;
+$yellow-600: #E6CD00;
+$yellow-700: #DEBF00;
+
+/* Grey */
+$grey-25: #FAFAFA;
+$grey-50: #F7F7F7;
+$grey-100: #E5E5E5;
+$grey-200: #D1D1D1;
+$grey-300: #B5B5B5;
+$grey-400: #868686;
+$grey-500: #6C6C6C;
+
+/* Graphite */
+$graphite-400: #707577;
+$graphite-500: #54585A;
+$graphite-700: #383B3D;
+$graphite-800: #252729;
+
+/* Action colours */
+/* Green */
+$green-50: #F4F8F2;
+$green-100: #E9F2E5;
+$green-300: #91C080;
+
+$white: #FFFFFF;
+$black: #000000;
+
+@import url('https://www.rsc-cdn.org/oxygen/assets/webfonts/fonts.min.css');
+
+$family-sans-serif: "Source Sans Pro", sans-serif;
+
+/* Bulma Variables */
+$navbar-item-img-max-height: 2.5rem;
+$navbar-height: 4rem;
+$navbar-background-color: $white;
+
+$primary: $sky-blue-700;
+
+$link: $dark-blue-500;
+$link-hover: $dark-blue-500;
+
+/* Box */
+$box-background-color: $white;
+$box-radius: 0;

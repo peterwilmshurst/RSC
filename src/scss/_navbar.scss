@@ -1,0 +1,19 @@
+.navbar {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.20);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.20);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.20);
+
+  a {
+      &:hover {
+          text-decoration: none;
+      }
+  }
+}
+
+.menu {
+  justify-content: space-between;
+
+  @include tablet {
+    justify-content: flex-start;
+  }
+}

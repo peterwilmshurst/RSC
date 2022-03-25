@@ -1,0 +1,13 @@
+.card {
+  &--donation {
+    @include tablet {
+      padding: 2rem;
+      background-image: url('../img/donations-bg-1200.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  }
+}
